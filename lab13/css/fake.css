@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "proxima";
+  src: url(../font/proxima.ttf);
+}
+
+@font-face {
+  font-family: "harlow";
+  src: url(../font/harlow.ttf);
+}
+
+body {
+  background-image: url('../img/background.png');
+  background-color: #0b2333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px;
+}
+
+button#grab_ticket {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  color: #1d465e; /* Color of the text inside the button */
+  background-color: #fc5759; /* Color of the button */
+  text-decoration: none;
+  border-radius: 3rem;
+  border-width: 0;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.5rem 2rem;
+  font-family: "proxima", Helvetica, Arial, sans-serif;
+}
+
+#h1_intro{
+  font-size: 4.3rem;
+  line-height: 4.3rem;
+}
+
+h1#title {
+  text-align: center;
+  font-family: "harlow", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #9dfeed;
+  font-size: 6rem;
+  line-height: 6rem;
+  transform: rotate(-2deg);
+  text-shadow: #3d8d98 -2px 3px;
+}
+
+#dash {
+  color: #fc5759;
+}
+
+h3#date{
+  font-family: "proxima", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #fdbb97;
+  font-size: 18px;
+  line-height: 22px;
+}
