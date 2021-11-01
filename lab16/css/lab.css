@@ -1,6 +1,12 @@
+@keyframes animation {
+  from {color: blue;}
+  to {color: red;}
+}
+
 body {
   font-family: Helvetica, Verdana, Arial, "san serif";
-  background-color: darkgray;
+  /*background-color: darkgray;*/
+  background-image: linear-gradient(60deg, red, yellow, blue);
   padding: 25px;
   font-size: 120%;
   margin: auto;
@@ -11,19 +17,13 @@ div#subcontent {
   padding: 30px;
   background-color: lightgray;
   border: solid 1px #333333;
-  height: 100vh;
-  width: 50vh;
+  border-radius: 25px;
+  height: 100em;
+  width: 80em;
+  box-shadow: -3px 3px;
 }
 
-#sidebar {
-  float: right;
-  display: inline-block;
-  width: 1em;
-  min-width: 300px;
-  margin: auto;
-}
-
-#links {
+nav#links {
   background-color: white;
   position: sticky;
   top: 0px;
@@ -34,24 +34,52 @@ div#subcontent {
   border: solid black;
 }
 
-h1, h2, h3 {
+div#subcontent div#columns {
+  margin: 0;
+  position: absolute;
+  column-count: 3;
+  column-gap: 8em;
+  column-fill: balance;
+}
+
+div#subcontent div#columns h2 {
+  font-family: "Courier New", monospace;
+  color: blue;
+  animation-name: animation;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  text-align: left;
+  margin: auto;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  text-shadow: -1px 2px;
+}
+
+h1{
   font-family: "Courier New", monospace;
   color: blue;
   text-transform: capitalize;
   letter-spacing: normal;
+  text-shadow: -3px 3px;
 }
 
-img {
-  width: 400px;
+div#subcontent div#image img {
+  margin-bottom: 10px;
+  width: 700px;
   height: auto;
+  filter: grayscale(100%);
+  object-fit: contain;
 }
 
-img:hover {
-  width: 500px;
+div#subcontent div#image img:hover {
+  width: 800px;
   height: auto;
+  transform: rotateZ(-10deg);
+  filter: saturate(100%);
+  transition: 2s;
 }
 
 a:hover {
   text-decoration: underline;
-  text-decoration-style: wavy;
 }
