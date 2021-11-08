@@ -1,0 +1,49 @@
+header, footer, nav, main, aside, section  {
+  border: 1px solid red;
+}
+
+body {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+body > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+div#main_block {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main#main {
+  flex: 3 0px;
+  order: 2;
+}
+
+aside#aside {
+  flex: 1 0 0;
+  order: 3;
+}
+
+footer#footer {
+  order: 4;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+  }
+
+  main#main {
+    width: 100%;
+  }
+
+  aside#aside {
+    width: 100%;
+  }
+}
