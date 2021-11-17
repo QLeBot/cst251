@@ -1,0 +1,34 @@
+body {
+  font-family: Helvetica, Verdana, Arial, "san serif";
+  background-color: darkgray;
+  padding: 25px;
+  font-size: 120%;
+  margin: auto;
+  border: solid black;
+  text-align: center;
+  justify-content: center;
+}
+
+div {
+  width: 97%;
+  text-align: center;
+}
+
+div#content {
+  padding: 30px;
+  background-color: lightgray;
+  border: solid 1px #333333;
+  height: auto;
+}
+
+h1, h2 {
+  font-family: "Courier New", monospace;
+  color: blue;
+  text-transform: capitalize;
+  letter-spacing: normal;
+}
+
+img {
+  width: 600px;
+  height: auto;
+}
