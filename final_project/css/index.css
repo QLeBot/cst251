@@ -1,0 +1,260 @@
+/*Fonts Imports*/
+/*Do not modify*/
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkRegular.otf);
+}
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkMedium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkLight.otf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkBold.otf);
+  font-weight: bold
+}
+@font-face {
+  font-family: landasans;
+  src: url(../font/LandasansMedium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: landasans;
+  src: url(../font/LandasansMedium.otf);
+  font-weight: lighter;
+}
+
+/*
+@keyframes nav_animation {
+  from {font-size: 100%;}
+  to {font-size: 110%}
+}
+*/
+
+/*Body*/
+/*Do not modify*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+/*Navigation Bar*/
+/*Do not modify*/
+div#nav {
+  /*display: inline-block;*/
+  width: 100%;
+  height: 6em;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+div#nav a {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 2em;
+  font-family: landasans;
+  font-weight: medium;
+}
+
+
+div#nav a:hover {
+  /**/
+}
+
+div#nav div#left {
+  float: left;
+  margin-left: 25em;
+  margin-right: 2em;
+  padding-top: 1em;
+}
+
+div#nav div#center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#nav div#right {
+  float: right;
+  margin-right: 22em;
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
+div#nav a#home_link {
+  font-size: 3em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+/*Button Zone*/
+/*Do not modify*/
+div#button_tile {
+  display; flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  text-align: center;
+}
+
+div#button_tile button {
+  margin-top: 8em;
+  width: 16em;
+  height: 3em;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  border-style: none;
+  border-radius: 1em;
+}
+
+/*Footer*/
+/*Do not modify*/
+footer {
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 10em;
+  /*z-index: 2;*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer h4 {
+  color: white;
+  text-align: center;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+footer p {
+  color: white;
+  display: inline;
+  padding: 1em;
+  font-size: 1.5em;
+  font-family: landasans;
+  font-weight: medium;
+}
+
+/*First Zone*/
+div#first_tile {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 30em;
+  /*z-index: 2;*/
+  align-items: center;
+  justify-content: center;
+}
+
+div#first_tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30em;
+  background-image: url("../img/montage_7wonders.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  /*background: rgba(0, 0, 0, 0.1);*/
+  opacity: 0.5;
+}
+
+div#first_tile h2 {
+  padding-left: 1em;
+  position: relative;
+  font-size: 5em;
+  z-index: 3;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#first_tile p {
+  padding-left: 2em;
+  position: relative;
+  font-size: 1em;
+  z-index: 3;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  font-family: lemon;
+  font-weight: medium;
+}
+
+/*Second Zone*/
+div#second_tile {
+  display: inline-block;
+  width: 100%;
+  height: 30em;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+div#second_tile h2 {
+  padding-left: 1em;
+    padding-top: 2em;
+  font-size: 2em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#second_tile p {
+  padding-left: 2em;
+  font-size: 1em;
+  font-family: lemon;
+  line-height: 2;
+}
+
+/*Second Zone*/
+div#third_tile {
+  display: inline-block;
+  background-image: url("../img/city_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center bottom -150px;*/
+  background-position: 50% 60%;
+  /*opacity: 0.8;*/
+  width: 100%;
+  height: 30em;
+}
+
+div#third_tile h2 {
+  padding-left: 1em;
+  font-size: 5em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#third_tile p {
+  padding-left: 2em;
+  font-size: 1em;
+  font-family: lemon;
+}

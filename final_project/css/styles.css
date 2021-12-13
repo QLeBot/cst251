@@ -1,0 +1,474 @@
+/*Fonts Imports*/
+/*Do not modify*/
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkRegular.otf);
+}
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkMedium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkLight.otf);
+  font-weight: lighter;
+}
+@font-face {
+  font-family: lemon;
+  src: url(../font/LemonMilkBold.otf);
+  font-weight: bold
+}
+@font-face {
+  font-family: landasans;
+  src: url(../font/LandasansMedium.otf);
+  font-weight: medium;
+}
+@font-face {
+  font-family: landasans;
+  src: url(../font/LandasansMedium.otf);
+  font-weight: lighter;
+}
+
+/*Specific Fonts*/
+@font-face {
+  font-family: liberty;
+  src: url(../font/liberty.ttf);
+}
+@font-face {
+  font-family: paris;
+  src: url(../font/CfParisRegular.ttf);
+}
+
+/*
+@keyframes nav_animation {
+  from {font-size: 100%;}
+  to {font-size: 110%}
+}
+*/
+
+/*Body*/
+/*Do not modify*/
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+/*Navigation Bar*/
+/*Do not modify*/
+div#nav {
+  /*display: inline-block;*/
+  width: 100%;
+  height: 6em;
+  background-color: black;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 1;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  z-index: 4;
+}
+
+div#nav a {
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 2em;
+  font-family: landasans;
+  font-weight: medium;
+}
+
+
+div#nav a:hover {
+  /**/
+}
+
+div#nav div#left {
+  float: left;
+  margin-left: 25em;
+  margin-right: 2em;
+  padding-top: 1em;
+}
+
+div#nav div#center {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div#nav div#right {
+  float: right;
+  margin-right: 22em;
+  margin-left: 2em;
+  padding-top: 1em;
+}
+
+div#nav a#home_link {
+  font-size: 3em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+/*Button Zone*/
+/*Do not modify*/
+div#button_tile {
+  display; flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30em;
+  text-align: center;
+}
+
+div#button_tile button {
+  margin-top: 8em;
+  width: 16em;
+  height: 3em;;
+  background-color: black;
+  color: white;
+  font-size: 1.5em;
+  border-style: none;
+  border-radius: 1em;
+}
+
+/*Footer*/
+/*Do not modify*/
+footer {
+  background-color: black;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 10em;
+  /*z-index: 2;*/
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer h4 {
+  color: white;
+  text-align: center;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+footer p {
+  color: white;
+  display: inline;
+  padding: 1em;
+  font-size: 1.5em;
+  font-family: landasans;
+  font-weight: medium;
+}
+
+/*Modify after this line*/
+
+/*Eiffel Tower*/
+div#eiffel{
+  background-image: url("img/eiffel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+div#eiffel h1{
+  text-align: center;
+  border: groove;
+}
+
+div#eiffel h2{
+  text-align: center;
+  text-decoration: underline;
+  /*font-family: "Papyrus", Times, serif;*/
+  font-family: "Austin News", Times, serif;
+}
+
+div#eiffel h3{
+  color: black;
+  background-color: aliceblue;
+  opacity: 45%;
+  border: 1px solid black; padding: 5px;
+}
+
+div#eiffel p{
+  font-family: "Courier New";
+  text-align: right;
+  position: absolute;
+  left: 500px;
+  right: 50px;
+  font-size: small;
+  }
+
+/*Versailles*/
+
+div#versailles{
+  background-image: url("img/2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+div#versailles h1{
+  text-align: center;
+  border: groove;
+}
+
+div#versailles h2{
+  text-align: center;
+  text-decoration: underline;
+  font-family: "Papyrus", Times, serif;
+}
+
+div#versailles h3{
+    color: black;
+    background-color: aliceblue;
+    opacity: 45%;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+div#versailles p{
+  font-family: "Courier New";
+  text-size-adjust: 50px;
+  color: rgb(58, 30, 30);
+  background: rgb(34,193,195);
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  border-style:initial;
+}
+
+/*Eiffel Tower*/
+/*First Zone*/
+div#first_tile_eiffel {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 30em;
+  /*z-index: 2;*/
+  align-items: center;
+  justify-content: center;
+}
+
+div#first_tile_eiffel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30em;
+  background-image: url("../img/eiffel.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  /*background: rgba(0, 0, 0, 0.1);*/
+  opacity: 0.5;
+}
+
+div#first_tile_eiffel h2 {
+  padding-left: 1em;
+  position: relative;
+  font-size: 5em;
+  z-index: 3;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  font-family: paris;
+  /*
+  font-family: lemon;
+  font-weight: bold;
+  */
+}
+
+div#first_tile_eiffel p {
+  padding-left: 2em;
+  position: relative;
+  font-size: 1em;
+  z-index: 3;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  font-family: lemon;
+  font-weight: medium;
+}
+
+/*Second Zone*/
+div#second_tile_eiffel {
+  display: inline-block;
+  width: 100%;
+  height: 35em;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+div#second_tile_eiffel h2 {
+  padding-left: 1em;
+    padding-top: 2em;
+  font-size: 2em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#second_tile_eiffel h3 {
+  padding-left: 1em;
+    padding-top: 2em;
+  font-size: 2em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#second_tile_eiffel p {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1em;
+  font-family: lemon;
+  line-height: 2;
+}
+
+/*Second Zone*/
+div#third_tile_eiffel {
+  display: inline-block;
+  background-image: url("../img/eiffel_night.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center bottom -150px;*/
+  background-position: 50% 75%;
+  /*opacity: 0.8;*/
+  width: 100%;
+  height: 80em;
+}
+
+div#third_tile_eiffel h2 {
+  padding-left: 1em;
+  font-size: 5em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#third_tile_eiffel p {
+  padding-left: 2em;
+  font-size: 1em;
+  font-family: lemon;
+}
+
+/*Staue of Liberty*/
+/*First Zone*/
+div#first_tile_liberty {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 30em;
+  /*z-index: 2;*/
+  align-items: center;
+  justify-content: center;
+}
+
+div#first_tile_liberty::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30em;
+  background-image: url("../img/liberty_second.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center top;*/
+  background-position: 50% 75%;
+  /*background: rgba(0, 0, 0, 0.1);*/
+  opacity: 0.5;
+}
+
+div#first_tile_liberty h2 {
+  padding-left: 1em;
+  position: relative;
+  font-size: 5em;
+  z-index: 3;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  font-family: liberty;
+  /*
+  font-family: lemon;
+  font-weight: bold;
+  */
+}
+
+div#first_tile_liberty p {
+  padding-left: 2em;
+  position: relative;
+  font-size: 1em;
+  z-index: 3;
+  /*background: rgba(0, 0, 0, 0.6);*/
+  font-family: lemon;
+  font-weight: medium;
+}
+
+/*Second Zone*/
+div#second_tile_liberty {
+  display: inline-block;
+  width: 100%;
+  height: 35em;
+  margin: auto;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+div#second_tile_liberty h2 {
+  padding-left: 1em;
+    padding-top: 2em;
+  font-size: 2em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#second_tile_liberty h3 {
+  padding-left: 1em;
+    padding-top: 2em;
+  font-size: 2em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#second_tile_liberty p {
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 1em;
+  font-family: lemon;
+  line-height: 2;
+}
+
+/*Second Zone*/
+div#third_tile_liberty {
+  display: inline-block;
+  background-image: url("../img/liberty_first.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-position: center bottom -150px;*/
+  background-position: 50% 0%;
+  /*opacity: 0.8;*/
+  width: 100%;
+  height: 80em;
+}
+
+div#third_tile_liberty h2 {
+  padding-left: 1em;
+  font-size: 5em;
+  font-family: lemon;
+  font-weight: bold;
+}
+
+div#third_tile_liberty p {
+  padding-left: 2em;
+  font-size: 1em;
+  font-family: lemon;
+}
